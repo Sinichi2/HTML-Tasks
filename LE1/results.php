@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="results.css">
+
+
 <?php
 include 'functions.php';
 
