@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES Compatibility Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>FLAMES Compatibility Checker</h1>
+    <form action="results.php" method="post">
+        <label for="yourFirstName">Your First Name:</label>
+        <input type="text" id="yourFirstName" name="yourFirstName" required>
+
+        <label for="yourLastName">Your Last Name:</label>
+        <input type="text" id="yourLastName" name="yourLastName" required>
+
+        <label for="yourBirthday">Your Birthday:</label>
+        <input type="date" id="yourBirthday" name="yourBirthday" required>
+
+        <label for="crushFirstName">Crush's First Name:</label>
+        <input type="text" id="crushFirstName" name="crushFirstName" required>
+
+        <label for="crushLastName">Crush's Last Name:</label>
+        <input type="text" id="crushLastName" name="crushLastName" required>
+
+        <label for="crushBirthday">Crush's Birthday:</label>
+        <input type="date" id="crushBirthday" name="crushBirthday" required>
+
+        <button type="submit">Check Compatibility</button>
+    </form>
+</body>
+</html>
