@@ -8,7 +8,7 @@ class Zodiac {
 
     public function __construct($date) {
         $zodiacData = $this->loadZodiacData();
-        $parsedDate = date('m-d', strtotime($date)); // Parse the date to "month-day" format
+        $parsedDate = date('m-d', strtotime($date)); 
 
         foreach ($zodiacData as $zodiac) {
             $startMonthDay = date('m-d', strtotime($zodiac['start_date']));
@@ -74,10 +74,8 @@ class Zodiac {
             'Virgo' => [
                 'Aries' => 'Medium', 'Taurus' => 'High', 'Gemini' => 'Medium', 'Cancer' => 'High', 'Leo' => 'Medium', 'Virgo' => 'High', 'Libra' => 'Medium', 'Scorpio' => 'High', 'Sagittarius' => 'Low', 'Capricornus' => 'High', 'Aquarius' => 'Low', 'Pisces' => 'Medium'
             ],
-            // Add remaining Zodiac combinations...
         ];
     
-        // Return compatibility or 'Unknown' if not found
         return $compatibilityChart[$sign1][$sign2] ?? 'Unknown';
     }
     
